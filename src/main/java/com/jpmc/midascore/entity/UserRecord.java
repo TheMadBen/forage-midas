@@ -40,7 +40,12 @@ public class UserRecord {
         return balance;
     }
 
+    public void setId(Long id) { this.id = id; }
+    public void setName(String name) { this.name = name; }
     public void setBalance(float balance) {
         this.balance = balance;
     }
+
+    public void debit(float amt) { this.balance -= amt; }
+    public void credit(float amt) { this.balance += amt; }
 }
